@@ -1,3 +1,3 @@
 # Foundry
 
-A description of this package.
+A collection of extensions in Swift.
