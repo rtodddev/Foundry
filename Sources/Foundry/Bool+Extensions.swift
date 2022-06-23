@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
 
     func toggle() -> Bool {
         return self == true ? false : true

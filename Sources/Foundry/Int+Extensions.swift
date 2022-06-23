@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
 
     func toCGFloat() -> CGFloat {
         return CGFloat(self)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
 
     func toCGFloat() -> CGFloat {
         return CGFloat(self)

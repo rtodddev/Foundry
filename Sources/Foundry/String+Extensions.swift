@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     func toBool() -> Bool? {
         return Bool(self.lowercased())
     }
@@ -34,7 +34,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
     func trimLeft(_ character: Character) -> String {
         return String(self.drop(while: { $0 == character }))
     }
@@ -52,7 +52,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
     func padLeft(_ character: Character, count: Int) -> String {
         return "\(character.times(count))\(self)"
     }
@@ -62,7 +62,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
 
     func times(_ x: Int) -> String {
         var string = ""
@@ -81,7 +81,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
 
     subscript (_ range: NSRange) -> Self {
         .init(self[index(startIndex, offsetBy: range.lowerBound) ..< index(startIndex, offsetBy: range.upperBound)])
